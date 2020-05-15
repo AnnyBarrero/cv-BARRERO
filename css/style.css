@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+
+/* ---------------------------------------- */
+/*              CONTAINER        */
+/*---------------------------------------- */
+
+.container{
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    max-width: 1190px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.row {
+    display: flex;
+}
+.col-left{
+    width: 33.3333%;
+}
+.col-right{
+    width: 66.6666%;
+}
+
+/* ---------------------------------------- */
+/*            COLONNE GAUCHE               */
+/*---------------------------------------- */
+
+.col-left{
+    background-color: #FECA07;
+    
+}
+/* ---------------------------------------- */
+/*              HEADER LEFT              */
+/*---------------------------------------- */
+
+.photo{ 
+    width: 50%;
+    margin: 30px auto;
+}
+.photo img{
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #DAAF12;
+}
+
+/*     TITRES GAUCHE  */
+
+
+.col-left h3{
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-weight: 500;
+    background-color: #404040;
+    padding: 5px;
+    color: #DAAF12;
+    text-align: center;
+}
+
+.title-left{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+/*     ADRESSE  */
+.title-left ul{
+    margin-top: 25px;
+    margin-left: 15px;
+    font-size: 1.1em;
+    font-style: normal;
+}
+.title-left li{
+    margin: 10px;
+}
+/*     A PROPOS DE MOI  */
+.about-me{
+    margin-top: 15px;
+    margin-bottom: 300px;
+}
+
+.about-me p{
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.1em;
+    text-align: justify;
+    padding: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/*     LOISIRS  */
+.icons{
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+
+}
+
+.ico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    font-size: 2em;
+    color: #404040;
+    padding: 15px 15px;
+    border: 2px solid #404040;
+    border-radius: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/* ---------------------------------------- */
+/*      ==        HEADER RIGHT             */
+/*---------------------------------------- */
+.header-right{
+ margin: 90px 40px;
+}
+/*      ==        MARGIN RIGHT et PADDING            */
+.education-right{
+    margin: 30px 40px 20px 40px;
+}
+.experience-right{
+    margin: 30px 40px 20px 40px;
+}
+
+.reference-right{
+    margin: 30px 40px 20px 40px;
+}
+.row-right{
+    display: flex;
+    padding-bottom: 15px;
+}
+.row-right-reference{
+    display: flex;
+    padding-bottom: 15px;
+}
+
+
+.fullname{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.fullname span{
+    color: #FECA07;
+}
+
+.profession{
+    color: #404040;
+    font-size: 1.7em;
+    font-weight: 400;
+}
+.profession span{
+    text-decoration: underline #FECA07;
+}
+
+.col-right h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 3px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #FECA07;
+    margin-bottom: 40px;
+}
+.col-time{
+    width: 27%;
+}
+.col-description{
+    width: 70%;
+}
+.col-description h4,h5,p{
+    padding: 5px;
+}
+.color{
+    color: #FECA07;
+}
+.dimensions{
+    margin-right: 0.6em;
+    font-size: 1.3em;
+}
+
+.circle-regular{
+    color: #FECA07;
+    margin-right: 3%;
+}
+.circle-solid{
+    color: #FECA07;
+    font-size: 0.6em;
+    margin-right: 3%; 
+}
+
+.col-right article{
+    margin-left: 35%;
+}
+.col-right h4{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.col-right h5{
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+.col-right p{
+    font-size: 1em;
+}
+.col-recommendations{
+    width: 50%;
+}
+.col-recommendations li{
+    margin: 5px;
+}
+
+
+
+/* propriétés pour mobile */
+@media only screen and (max-width: 667px){
+    .container{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .row {
+        display: block;
+    }
+    .col-left{
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .col-left h3{
+        
+        font-weight: 500;
+    }
+    .title-left{
+        font-size: 0.9em;
+        margin: 0px;
+    }
+    .title-left li{
+        margin: 5px 20px;
+    }
+    .photo{
+        width: 40%;
+        margin: 15px auto;
+    }
+    .about-me{
+        font-size: 0.9em;
+        margin-top: 5px;
+        margin-bottom: 50px;
+    }
+    .hobbies{
+        font-size: 0.8em;
+    }
+    .icons{
+        font-size: 0.9em;
+    }
+    /*Col right*/
+    .col-right{
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .header-right{
+        margin: 10px 10px;
+        font-size: 0.9em;
+    }
+    .education-right {
+        margin: 20px;
+    }
+    .experience-right{
+        margin: 20px;
+    }
+    .reference-right{
+        margin: 20px;
+    }
+    .fullname {
+        font-size: 2.5em
+    }
+    .col-right h3{
+        font-size: 1.3em;
+        padding-bottom: 3px;
+        margin-bottom: 20px;
+    }
+
+    .col-right h4{
+        font-size: 1em;
+    }
+    .col-right h5{
+        font-size: 1em;
+    }
+    .col-right p{
+        font-size: 1em;
+    }
+}
+ /*Proprietés pour une meilleure mise en forme des recommendations*/
+@media only screen and (max-width: 480px){
+    .row-right-reference{
+        display: block;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+    .col-recommendations{
+        width: 100%;
+        margin-bottom: 10%;
+    } 
+    /*Proprietés pour le size du titres*/
+    .col-right h4{
+        font-size: 0.9em;
+    }
+    .col-right h5{
+        font-size: 0.9em;
+    }
+    .col-right p{
+        font-size: 0.9em;
+    }
+
+    
+}
+/*propriétés pour tablette*/
+@media only screen and (min-width:668px) and (max-width:990px){
+    /*propriétés pour la photo*/
+    .photo{
+            width: 40%;
+    }
+    /*sizes et margin colonne gauche*/
+    .title-left{
+        font-size: 0.8em;
+    }
+    .about-me{
+        font-size: 0.8em;
+    }
+    .hobbies{
+        font-size: 1em;
+    }
+    .ico{
+        padding: 5px 5px;
+    }
+    /*Colonne droite*/
+    /*margin et size de nom et prenom*/
+    .header-right{
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+    .fullname{
+        font-size: 2em;
+    }
+    .profession{
+        font-size: 1.3em;
+    }
+    /*Le size pour le contenu de la colonne droite*/
+    .col-right h3{
+        font-size: 1.2em;
+    }
+    .col-right h4{
+        font-size: 1em;
+    }
+    .col-right h5{
+        font-size: 1em;
+    }
+    .col-right p{
+        font-size: 1em;
+    }
+
+}
