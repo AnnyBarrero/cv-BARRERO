@@ -78,12 +78,12 @@ ul {
 .title-left li{
     margin: 10px;
 }
-/*     A PROPOS DE MOI  */
+/*   la taille de l'article  A PROPOS DE MOI  */
 .about-me{
     margin-top: 15px;
     margin-bottom: 300px;
 }
-
+/*   les propriétés du contenu du paragraphe a propos de moi  */
 .about-me p{
     margin-top: 25px;
     margin-left: 20px;
@@ -95,14 +95,14 @@ ul {
     line-height: 1.5;
 }
 
-/*     LOISIRS  */
+/*  la position des icons  dans LOISIRS  */
 .icons{
     display: flex;
     flex-direction: row;
     padding: 10%;
 
 }
-
+/*  la taille, couleur et border des icons  dans LOISIRS  */
 .ico{
     display: flex;
     justify-content: center;
@@ -124,7 +124,7 @@ ul {
 .header-right{
  margin: 90px 40px;
 }
-/*      ==        MARGIN RIGHT et PADDING            */
+/*       les marges de la section de la colonne droite   MARGIN RIGHT et PADDING            */
 .education-right{
     margin: 30px 40px 20px 40px;
 }
@@ -135,6 +135,8 @@ ul {
 .reference-right{
     margin: 30px 40px 20px 40px;
 }
+/* l'espace et position des sections dans la colonne droite */
+
 .row-right{
     display: flex;
     padding-bottom: 15px;
@@ -143,26 +145,28 @@ ul {
     display: flex;
     padding-bottom: 15px;
 }
-
-
+/* size et colors pour le nom et profession */
 .fullname{
     font-size: 3em;
     text-transform: uppercase;
     font-weight: 500;
 }
+/* change le couleur de ANNY*/
+
 .fullname span{
     color: #FECA07;
 }
-
+/* taille de profession */
 .profession{
     color: #404040;
     font-size: 1.7em;
     font-weight: 400;
 }
+/* souligne la profession */
 .profession span{
     text-decoration: underline #FECA07;
 }
-
+/* propriétés pour les titres de la colonne droite */
 .col-right h3{
     text-transform: uppercase;
     font-weight: bold;
@@ -172,6 +176,7 @@ ul {
     border-bottom: 2px solid #FECA07;
     margin-bottom: 40px;
 }
+/* widht et padding pour la section date et description */
 .col-time{
     width: 27%;
 }
@@ -181,6 +186,7 @@ ul {
 .col-description h4,h5,p{
     padding: 5px;
 }
+/* proprietés pour les icons */
 .color{
     color: #FECA07;
 }
@@ -198,10 +204,8 @@ ul {
     font-size: 0.6em;
     margin-right: 3%; 
 }
+/* proprietés pour les fonts de la colonne droite  */
 
-.col-right article{
-    margin-left: 35%;
-}
 .col-right h4{
     text-transform: uppercase;
     font-weight: 500;
@@ -214,6 +218,7 @@ ul {
 .col-right p{
     font-size: 1em;
 }
+/* pour les 2 recommendations, une a côté de l'autre  */
 .col-recommendations{
     width: 50%;
 }
@@ -225,6 +230,8 @@ ul {
 
 /* propriétés pour mobile */
 @media only screen and (max-width: 667px){
+
+    /* proprietés pour les 2 colonnes, la colonne de gauche au-dessus de la colonne de droite  */
     .container{
         display: flex;
         width: 100%;
@@ -239,6 +246,7 @@ ul {
         flex-direction: column;
         width: 100%;
     }
+    /* la taille des titres dans la colonne gauche*/
     .col-left h3{
         
         font-weight: 500;
@@ -247,53 +255,65 @@ ul {
         font-size: 0.9em;
         margin: 0px;
     }
+    /* espace entre les li dans la colonne gauche*/
     .title-left li{
         margin: 5px 20px;
     }
+    /* la taille de la photo*/
     .photo{
         width: 40%;
         margin: 15px auto;
     }
+    /* la taille et le margin de la section a propos de moi*/
     .about-me{
         font-size: 0.9em;
         margin-top: 5px;
         margin-bottom: 50px;
     }
+    /* le font dans la section loisirs, titre et icons*/
     .hobbies{
         font-size: 0.8em;
     }
     .icons{
         font-size: 0.9em;
     }
-    /*Col right*/
+    /* ---------------------------------------- */
+/*      ==        COLONNE DROITE            */
+/*---------------------------------------- */
+/* position de la colonne droite*/
     .col-right{
         justify-content: space-around;
         display: flex;
         flex-direction: column;
         width: 100%;
     }
+    /* margin et size por le nom et profession dans la colonne droite*/
     .header-right{
         margin: 10px 10px;
         font-size: 0.9em;
     }
-    .education-right {
-        margin: 20px;
-    }
-    .experience-right{
-        margin: 20px;
-    }
-    .reference-right{
-        margin: 20px;
-    }
     .fullname {
         font-size: 2.5em
     }
+    /* diminuer le margin dans la section formation*/
+    .education-right {
+        margin: 20px;
+    }
+    /* diminuer le margin dans la section expérience*/
+    .experience-right{
+        margin: 20px;
+    }
+    /* diminuer le margin dans la section recommandations*/
+    .reference-right{
+        margin: 20px;
+    }
+     /* Diminuer l'espace entre les titres et section dans la colonne droite*/
     .col-right h3{
         font-size: 1.3em;
         padding-bottom: 3px;
         margin-bottom: 20px;
     }
-
+    /* diminuer le size de la description dans la colonne droite*/
     .col-right h4{
         font-size: 1em;
     }
@@ -306,6 +326,7 @@ ul {
 }
  /*Proprietés pour une meilleure mise en forme des recommendations*/
 @media only screen and (max-width: 480px){
+     /*placer une colonne au-dessus de l'autre dans recommendations*/
     .row-right-reference{
         display: block;
         padding-bottom: 15px;
