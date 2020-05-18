@@ -9,7 +9,6 @@ ul {
 /* ---------------------------------------- */
 /*              CONTAINER        */
 /*---------------------------------------- */
-
 .container{
     font-size: 16px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -56,7 +55,7 @@ ul {
 .col-left h3{
     text-transform: uppercase;
     font-size: 1.6em;
-    font-weight: 500;
+    font-weight: 600;
     background-color: #404040;
     padding: 5px;
     color: #DAAF12;
@@ -99,22 +98,24 @@ ul {
 .icons{
     display: flex;
     flex-direction: row;
-    padding: 10%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 
 }
-/*  la taille, couleur et border des icons  dans LOISIRS  */
-.ico{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40%;
-    font-size: 2em;
-    color: #404040;
-    padding: 15px 15px;
-    border: 2px solid #404040;
+
+.hobbies li{
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
+    overflow: hidden;
+    border: 2px solid #404040;
+}
+/*  padding et size des icons  dans LOISIRS  */
+.ico{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 7px;
 }
 
 
@@ -270,13 +271,9 @@ ul {
         margin-top: 5px;
         margin-bottom: 50px;
     }
-    /* le font dans la section loisirs, titre et icons*/
-    .hobbies{
-        font-size: 0.8em;
-    }
-    .icons{
-        font-size: 0.9em;
-    }
+    address{
+        text-align: center;
+    } 
     /* ---------------------------------------- */
 /*      ==        COLONNE DROITE            */
 /*---------------------------------------- */
@@ -351,28 +348,55 @@ ul {
 }
 /*propriétés pour tablette*/
 @media only screen and (min-width:668px) and (max-width:990px){
+   /* position du container*/
+    .container{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .row {
+        display: block;
+    }
+    /* position de la colonne gauche*/
+    .col-left{
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    /* position de la colonne droite*/
+    .col-right{
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
     /*propriétés pour la photo*/
     .photo{
-            width: 40%;
+            width: 30%;
     }
     /*sizes et margin colonne gauche*/
+    .col-left h3{
+        font-size: 1.5em;
+    }
     .title-left{
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
+    address{
+        text-align: center;
+    } 
     .about-me{
-        font-size: 0.8em;
+        font-size: 0.9em;
+        font-weight: 400;
+        margin-bottom: 150px;
+        text-align: center;
     }
-    .hobbies{
-        font-size: 1em;
-    }
-    .ico{
-        padding: 5px 5px;
-    }
+   
     /*Colonne droite*/
     /*margin et size de nom et prenom*/
     .header-right{
-        margin-left: 50px;
-        margin-top: 40px;
+        margin: 50px 40px;
     }
     .fullname{
         font-size: 2em;
@@ -382,7 +406,7 @@ ul {
     }
     /*Le size pour le contenu de la colonne droite*/
     .col-right h3{
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
     .col-right h4{
         font-size: 1em;
