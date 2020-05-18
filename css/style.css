@@ -93,7 +93,6 @@ ul {
     font-weight: 400;
     line-height: 1.5;
 }
-
 /*  la position des icons  dans LOISIRS  */
 .icons{
     display: flex;
@@ -101,9 +100,7 @@ ul {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-
 }
-
 .hobbies li{
     width: 50px;
     height: 50px;
@@ -117,8 +114,6 @@ ul {
     padding-top: 10px;
     padding-left: 7px;
 }
-
-
 /* ---------------------------------------- */
 /*      ==        HEADER RIGHT             */
 /*---------------------------------------- */
@@ -126,23 +121,12 @@ ul {
  margin: 90px 40px;
 }
 /*       les marges de la section de la colonne droite   MARGIN RIGHT et PADDING            */
-.education-right{
-    margin: 30px 40px 20px 40px;
-}
-.experience-right{
+.education-right, .reference-right, .experience-right{
     margin: 30px 40px 20px 40px;
 }
 
-.reference-right{
-    margin: 30px 40px 20px 40px;
-}
 /* l'espace et position des sections dans la colonne droite */
-
-.row-right{
-    display: flex;
-    padding-bottom: 15px;
-}
-.row-right-reference{
+.row-right, .row-right-reference{
     display: flex;
     padding-bottom: 15px;
 }
@@ -153,7 +137,6 @@ ul {
     font-weight: 500;
 }
 /* change le couleur de ANNY*/
-
 .fullname span{
     color: #FECA07;
 }
@@ -195,15 +178,9 @@ ul {
     margin-right: 0.6em;
     font-size: 1.3em;
 }
-
-.circle-regular{
-    color: #FECA07;
+.circle-regular, .circle-solid{
     margin-right: 3%;
-}
-.circle-solid{
-    color: #FECA07;
-    font-size: 0.6em;
-    margin-right: 3%; 
+    font-size: 0.8em;
 }
 /* proprietés pour les fonts de la colonne droite  */
 
@@ -226,8 +203,6 @@ ul {
 .col-recommendations li{
     margin: 5px;
 }
-
-
 
 /* propriétés pour mobile */
 @media only screen and (max-width: 667px){
@@ -292,19 +267,12 @@ ul {
     .fullname {
         font-size: 2.5em
     }
-    /* diminuer le margin dans la section formation*/
-    .education-right {
+    /* diminuer le margin dans la section formation, expérience, recommandations */
+    .education-right, .experience-right, .reference-right{
         margin: 20px;
     }
-    /* diminuer le margin dans la section expérience*/
-    .experience-right{
-        margin: 20px;
-    }
-    /* diminuer le margin dans la section recommandations*/
-    .reference-right{
-        margin: 20px;
-    }
-     /* Diminuer l'espace entre les titres et section dans la colonne droite*/
+    
+    /* Diminuer l'espace entre les titres et section dans la colonne droite*/
     .col-right h3{
         font-size: 1.3em;
         padding-bottom: 3px;
