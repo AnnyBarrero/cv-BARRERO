@@ -23,77 +23,81 @@
         <div class="container"> 
             <div class="row">
                 <!--Ici c'est la col-left-->
-                <aside class="col-left"> 
+                <aside class="col-left col-left-container"> 
                     <header class="photo">
                         <img src="images/photo.jpg" alt="Photo Anny Barrero">
                     </header>
-                   
+                    <article class="about-me">
+                        <p>Je suis passionnée par la gestion de projet informatique et developpement web. 
+                            Je souhaite continuer à développer ma carrière et à appliquer mes connaissances dans ces domaines.
+                        </p>
+                    </article>
                     <article class="title-left">   
-                        <h3>contact</h3>
+                        
                         <address>
                             <ul>
-                                <li>Adresse 
+                                <li><i class="fas fa-solid fa-map-pin"></i>
                                 <p>Lyon, France</p>
                                 </li>
-                                <li>Téléphone
-                                <p>06 12 94 78 97</p>
+                                
+                                <li>
+                                    <i class="fas fa-solid fa-phone left-ico"></i>
+                                <p class="nounderline"> <a class="nounderline" href="tel:0612947897">06.12.94.78.97</a> </p>
                                 </li>
-                                <li>Email 
+                                <li><i class="fas fa-regular fa-envelope left-ico"></i>
                                 <p> anny_barrero@hotmail.com </p>
-                                </li>
-                                <li>Site Web
-                                <p> www.anny.com </p>
-                                 </li>    
-                                <li>Skype
-                                 <p> @Anny_Barrero </p>
                                 </li>
                             </ul>
                         </address>
                     </article>
 
-                    <article class="about-me">
-                        <h3> à propos de moi</h3>
-                        <p>Ayant fini quatre années d’études supérieures dans le système éducatif Colombien, à 28 ans, 
-                           j’ai décidé de me lancer dans une reconversion professionnelle pour devenir développeusse Web.
-                           Grâce à mes pratiques professionnelles, j’ai développé un côté relationnel et j’ai appris à travailler en équipe, 
-                           de même qu’à travailler en autonomie. De plus, mes expériences de vie à l’étranger m’ont appris à comprendre et à respecter 
-                           les différentes cultures, ce qui m’a fait une personne qui s’adapte et qui apprend rapidement.
-                          J’ambitionne d’exerce le métier de developpement web afin d’evoluer dans ce domaine qui m’attire de plus en plus.
-                        </p>
-                    </article>
-                    <article class="hobbies">
-                        <h3>LOISIRS</h3>
-                        <ul class="icons">
-                           <li><i class="fas fa-globe-americas ico"></i></li>
-                           <li><i class="fas fa-laptop-code ico"></i></li>
-                           <li><i class="fas fa-running ico"></i></li>
-                        </ul>
-                    </article>
-                </aside>
-
-            <!--Ici commence la colonne droite-->
-
-                <section class="col-right">
-                    <!--c'este le header de nom et profession-->
-
-                    <header class="header-right">
-                        <h1 class="fullname"><span>Anny</span> Barrero</h1>   
-                        <h2 class="profession"><span> Dével</span>oppeuse Web</h2>
-                    </header>
-                    <!--titre formation et icon-->
-
-                    <section class="education-right">
+                    <!-- Education section -->
+                    <section class="education-left">
                         <header class="formation-title">
-                            <h3><i class="fas fa-graduation-cap color dimensions"></i>Formation
+                            <h3 style="margin-bottom: 15px; margin-top: 15px;"><i class="fas fa-graduation-cap color-left dimensions-left"></i>Formation
                             </h3>
                         </header>
+                        <div class="row-right-formation">
+                            <!--div icon-->
+                                 <span><i class="fas fa-circle fa-xs" style="font-size: 7px;"></i></span>
+                            <!--div sur la ville et date-->
+                            <div class="col-time-left">
+                                <ul>
+                                    <li>2022-2024<br>
+                                    Lyon</li>
+                                </ul>
+                            </div>
+                            <!--div côté description-->
+                            <div class="col-description">
+                                <h4>IPI, école d'informatique</h4>
+                                <h5>BAC+5 DIR. DE PROJETS INFORMATIQUES</h5>
+                                
+                            </div>
+                        </div>
                         <div class="row-right">
                             <!--div icon-->
-                                 <span class="circle-regular"><i class="far fa-dot-circle fa-xs color"></i></span>
+                                 <span class="circle-regular-left"><i class="fas fa-circle fa-xs" style="font-size: 7px;"></i></span>
                             <!--div sur la ville et date-->
                             <div class="col-time">
                                 <ul>
-                                    <li>2020<br>
+                                    <li>2021-2022<br>
+                                    Lyon</li>
+                                </ul>
+                            </div>
+                            <!--div côté description-->
+                            <div class="col-description">
+                                <h4>IPI, école d'informatique</h4>
+                                <h5>BAC+3 Conceptrice Developpeuse D'applications Numeriques</h5>
+                                
+                            </div>
+                        </div>
+                        <div class="row-right">
+                            <!--div icon-->
+                                 <span class="circle-regular-left"><i class="fas fa-circle fa-xs" style="font-size: 7px;"></i></span>
+                            <!--div sur la ville et date-->
+                            <div class="col-time">
+                                <ul>
+                                    <li>2020-2021<br>
                                     Lyon</li>
                                 </ul>
                             </div>
@@ -101,11 +105,11 @@
                             <div class="col-description">
                                 <h4>OpenClassrooms</h4>
                                 <h5>Formation développeur Web</h5>
-                                <p>Découvrir le quotidien d'un développeur, transformez son CV en site web. </p>
+                                <p>Html, Javascript, Sass. </p>
                             </div>
                         </div>
                         <div class="row-right">
-                            <span class="circle-solid"><i class="fas fa-circle fa-xs color"></i></span>
+                            <span class="circle-solid-left"><i class="fas fa-circle fa-xs" style="font-size: 7px;"></i></span>
                             <!--div sur la ville et date-->
                             <div class="col-time"> 
                                 <ul>
@@ -121,7 +125,7 @@
                         </div>    
                         <div class="row-right">
                             <!--div icon-->
-                                <span class="circle-solid"><i class="fas fa-circle fa-xs color"></i></span>
+                                <span class="circle-solid-left"><i class="fas fa-circle fa-xs" style="font-size: 7px;"></i></span>
                                 <!--div sur la ville et date-->
                             <div class="col-time">
                                 <ul>
@@ -136,6 +140,29 @@
                             </div>
                         </div> 
                     </section>
+
+                    <article class="hobbies">
+                        <h3>LANGUES</h3>
+                        <ul class="icons">
+                           <li><i class="fas fa-globe-americas ico"></i></li>
+                           <li><i class="fas fa-laptop-code ico"></i></li>
+                           <li><i class="fas fa-running ico"></i></li>
+                        </ul>
+                    </article>
+                </aside>
+
+            <!--Ici commence la colonne droite-->
+
+                <section class="col-right">
+                    <!--c'este le header de nom et profession-->
+
+                    <header class="header-right">
+                        <h1 class="fullname"><span>Anny</span> Barrero</h1>   
+                        <h2 class="profession"><span> Chef de projet</span> informatique</h2>
+                    </header>
+        
+
+                    
                     <!--section expérience professionelle-->
                     <section class="experience-right">
                         <header class="experience-title">

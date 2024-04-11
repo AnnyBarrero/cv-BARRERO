@@ -1,4 +1,7 @@
-* {
+
+
+/* Supprime les marges et les rembourrages ajoutés par défaut */
+body, h1, h2, h3, h4, h5, p {
     margin: 0;
     padding: 0;
 }
@@ -31,9 +34,23 @@ ul {
 /*            COLONNE GAUCHE               */
 /*---------------------------------------- */
 
-.col-left{
-    background-color: #FECA07;
+/* .col-left{
+    background-color: #e8dfcf;
     
+} */
+.col-left {
+    width: 50%;
+    padding: 20px;
+    background-color: #E8DFCF;
+    border-radius: 10px;
+}
+.contact, .about-me, .hobbies {
+    margin-bottom: 30px;
+}
+
+.education-left h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 /* ---------------------------------------- */
 /*              HEADER LEFT              */
@@ -41,13 +58,20 @@ ul {
 
 .photo{ 
     width: 50%;
-    margin: 30px auto;
+    margin: 0 auto;
+    text-align: center;
 }
 .photo img{
-    width: 100%;
+    width: 70%;
     border-radius: 50%;
-    border: 2px solid #DAAF12;
+    border: 5px solid white;
 }
+/* .photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+} */
 
 /*     TITRES GAUCHE  */
 
@@ -56,42 +80,54 @@ ul {
     text-transform: uppercase;
     font-size: 1.6em;
     font-weight: 600;
-    background-color: #404040;
+    /* background-color: #404040; */
     padding: 5px;
-    color: #DAAF12;
-    text-align: center;
+    color: #404040;
+    /* text-align: center; */
 }
 
 .title-left{
-    margin-top: 30px;
     margin-bottom: 30px;
 
 }
 /*     ADRESSE  */
+/* CSS */
+.nounderline {
+    text-decoration: none; /* Pour enlever le soulignement */
+    color: inherit; /* Pour hériter la couleur du texte parent */
+}
+
 .title-left ul{
-    margin-top: 25px;
-    margin-left: 15px;
+    text-align: center;
+    margin: 0 auto;
+    /* margin-top: 25px; */
+    /* margin-left: 15px; */
     font-size: 1.1em;
     font-style: normal;
 }
 .title-left li{
-    margin: 10px;
+    margin: 5px;
 }
+.title-left i{
+    color: white;
+    text-shadow: 0 0 3px #404040;
+}
+
 /*   la taille de l'article  A PROPOS DE MOI  */
 .about-me{
-    margin-top: 15px;
-    margin-bottom: 300px;
+    margin-top: 5px;
+    /* margin-bottom: 300px; */
 }
 /*   les propriétés du contenu du paragraphe a propos de moi  */
 .about-me p{
-    margin-top: 25px;
+    margin-top: 5px;
     margin-left: 20px;
     margin-right: 20px;
-    font-size: 1.1em;
-    text-align: justify;
+    font-size: 3px;
+    /* text-align: justify; */
     padding: 15px;
-    font-weight: 400;
-    line-height: 1.5;
+    /* font-weight: 400; */
+    /* line-height: 1.5; */
 }
 /*  la position des icons  dans LOISIRS  */
 .icons{
@@ -117,6 +153,49 @@ ul {
     transform: translate(-50%, -50%);
     position: absolute
 }
+/***formation left*/
+.color-left{
+    color: #404040;
+    font-size: 6px;
+}
+
+
+.contact h3, .about-me h3, .hobbies h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.address {
+    margin-bottom: 20px;
+}
+
+.address p {
+    margin-bottom: 10px;
+}
+
+.about-me p {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons i {
+    font-size: 24px;
+    color: #555;
+    margin-right: 10px;
+}
+.col-time-left{
+    width: 27%;
+
+}
+.dimensions-left{
+    margin-right: 0.6em;
+    font-size: 1em;
+}
 /* ---------------------------------------- */
 /*      ==        HEADER RIGHT             */
 /*---------------------------------------- */
@@ -124,7 +203,10 @@ ul {
  margin: 90px 40px;
 }
 /*       les marges de la section de la colonne droite   MARGIN RIGHT et PADDING            */
-.education-right, .reference-right, .experience-right{
+.education-left{
+    margin: 10px 10px 10px 35px; 
+} 
+.reference-right, .experience-right{
     margin: 30px 40px 20px 40px;
 }
 
@@ -132,6 +214,10 @@ ul {
 .row-right, .row-right-reference{
     display: flex;
     padding-bottom: 15px;
+}
+.row-right-formation{
+    display: flex;
+    padding-bottom: 5px;
 }
 /* size et colors pour le nom et profession */
 .fullname{
@@ -141,7 +227,7 @@ ul {
 }
 /* change le couleur de ANNY*/
 .fullname span{
-    color: #FECA07;
+    color: #e8dfcf;
 }
 /* taille de profession */
 .profession{
@@ -151,7 +237,7 @@ ul {
 }
 /* souligne la profession */
 .profession span{
-    text-decoration: underline #FECA07;
+    text-decoration: underline #e8dfcf;
 }
 /* propriétés pour les titres de la colonne droite */
 .col-right h3{
@@ -160,7 +246,7 @@ ul {
     font-size: 1.5em;
     padding-top: 3px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #FECA07;
+    border-bottom: 2px solid #e8dfcf;
     margin-bottom: 40px;
 }
 /* widht et padding pour la section date et description */
@@ -175,7 +261,7 @@ ul {
 }
 /* proprietés pour les icons */
 .color{
-    color: #FECA07;
+    color: #e8dfcf;
 }
 .dimensions{
     margin-right: 0.6em;
@@ -271,7 +357,7 @@ ul {
         font-size: 2.5em
     }
     /* diminuer le margin dans la section formation, expérience, recommandations */
-    .education-right, .experience-right, .reference-right{
+    .experience-right, .reference-right{
         margin: 20px;
     }
     
@@ -390,3 +476,4 @@ ul {
     }
 
 }
+
