@@ -90,6 +90,24 @@ ul {
     margin-bottom: 30px;
 
 }
+.langues-left{
+    margin-bottom: 30px;
+}
+.title-left ul{
+    text-align: center;
+    margin: 0 auto;
+    /* margin-top: 25px; */
+    /* margin-left: 15px; */
+    font-size: 1.1em;
+    font-style: normal;
+}
+.langues-left li{
+    margin: 5px;
+}
+.langues-left i{
+    color: white;
+    text-shadow: 0 0 3px #404040;
+}
 /*     ADRESSE  */
 /* CSS */
 .nounderline {
@@ -160,7 +178,7 @@ ul {
 }
 
 
-.contact h3, .about-me h3, .hobbies h3 {
+.contact h3, .about-me h3, .hobbies h3 ,  .langues-left h3{
     font-size: 1.2em;
     margin-bottom: 10px;
 }
