@@ -20,6 +20,9 @@ ul {
     margin: 0 auto;
 
 }
+.header-toshow-mobile{
+    display: none;
+}
 .row {
     display: flex;
 }
@@ -315,7 +318,7 @@ ul {
 
 /* propriétés pour mobile */
 @media only screen and (max-width: 667px){
-
+    
     /* proprietés pour les 2 colonnes, la colonne de gauche au-dessus de la colonne de droite  */
     .container{
         display: flex;
@@ -325,15 +328,67 @@ ul {
     .row {
         display: block;
     }
+
+    .header-toshow-mobile {
+        display: block;
+        text-align: center;
+        /* size et colors pour le nom et profession */
+        .fullname{
+            font-size: 2em;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-shadow: 0 0 3px #404040;
+        }
+        /* change le couleur de ANNY*/
+        .fullname span{
+            color: white;
+        }
+        /* taille de profession */
+        .profession{
+            color: #404040;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+        /* souligne la profession */
+        .profession span{
+            text-decoration: underline #e8dfcf;
+        }
+    }
+    .header-right {
+        display: none;
+    }
+    article{
+        text-align: center;
+        margin-bottom: 3px;
+        address{
+            margin-left: -35px;
+        }
+    }
     .col-left{
         justify-content: space-around;
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding: 1px;
+    }
+    .col-time-left{
+        width: 60%;
+        align-content: start;
+        margin-top: -8px;
+        margin-left: -15px;
+    }
+    .row-right{
+        .col-time{
+            width: 60%;
+            margin-top: -8px;
+        margin-left: -15px;
+        }
+    }
+    .education-left {
+        margin: 5px 5px 5px 25px;
     }
     /* la taille des titres dans la colonne gauche*/
     .col-left h3{
-        
         font-weight: 500;
     }
     .title-left{
