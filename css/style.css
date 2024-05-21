@@ -133,17 +133,19 @@ ul {
 
 /*   la taille de l'article  A PROPOS DE MOI  */
 .about-me{
+    text-align: center;
+    margin: 0 auto;
     margin-top: 5px;
     /* margin-bottom: 300px; */
 }
 /*   les propriétés du contenu du paragraphe a propos de moi  */
 .about-me p{
     margin-top: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
     font-size: 3px;
     /* text-align: justify; */
-    padding: 15px;
+    /* padding: 15px; */
     /* font-weight: 400; */
     /* line-height: 1.5; */
 }
